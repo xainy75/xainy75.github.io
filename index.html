@@ -3,34 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zain Ul Abidin | Data Analyst Portfolio</title>
+    <title>Zain Ul Abidin | Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
+    <nav>
+        <div class="container nav-flex">
+            <div class="logo">ZA</div>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero">
         <div class="container">
             <h1>Zain Ul Abidin</h1>
-            <p>Junior Data Analyst | BZU '28 | Entrepreneur</p>
+            <p class="tagline">Data Analytics Professional | Business Intelligence | E-commerce Specialist</p>
+            <div class="badges">
+                <span><i class="fas fa-certificate"></i> Google Certified</span>
+                <span><i class="fab fa-aws"></i> AWS Technical Essentials</span>
+            </div>
         </div>
     </header>
 
-    <section class="container content">
-        <h2>About Me</h2>
-        <p>I am a Data Analytics student at Bahauddin Zakariya University with expertise in Python, SQL, and Power BI. I am also the founder of Arenoz, an e-commerce platform.</p>
-        
-        <h2>Skills</h2>
-        <ul>
-            <li><strong>Languages:</strong> Python, SQL, R</li>
-            <li><strong>Tools:</strong> Power BI, Tableau, Excel, SPSS</li>
-            <li><strong>Expertise:</strong> Statistical Analysis, Business Intelligence</li>
-        </ul>
+    <main class="container">
+        <section id="about" class="card">
+            <h2><i class="fas fa-user"></i> Professional Summary</h2>
+            <p>Data-driven analytics professional with hands-on experience in ETL processes and data visualization[cite: 6]. I specialize in transforming raw data into actionable insights using SQL, Python, and Power BI[cite: 7].</p>
+        </section>
 
-        <h2>Connect with Me</h2>
-        <p>Check out my <a href="https://www.linkedin.com/in/zain-ul-abidin-b387a1381/" target="_blank">LinkedIn Profile</a></p>
-    </section>
+        <section id="experience">
+            <h2><i class="fas fa-briefcase"></i> Experience</h2>
+            <div class="timeline">
+                <div class="event card">
+                    <h3>E-commerce Data Analyst (Intern)</h3>
+                    <h4>Daraz E-commerce | Oct 2025 - Present</h4>
+                    <ul>
+                        <li>Manage product data pipelines for 500+ SKUs using Excel automation[cite: 14, 15, 16].</li>
+                        <li>Optimize ROI for Google and Facebook Ads through data-driven recommendations[cite: 17].</li>
+                        <li>Build interactive dashboards tracking conversion rates and customer acquisition[cite: 18].</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2><i class="fas fa-project-diagram"></i> Key Projects</h2>
+            <div class="project-grid">
+                <div class="project-card card">
+                    <h3>Uber Analytics Project</h3>
+                    <p>Developed a Power BI dashboard to visualize KPIs like ride volume and revenue[cite: 29].</p>
+                    <span class="tech-tag">Power BI</span> <span class="tech-tag">DAX</span>
+                </div>
+                <div class="project-card card">
+                    <h3>Sales Analysis Dashboard</h3>
+                    <p>Dynamic Tableau dashboard tracking market trends and regional performance[cite: 33].</p>
+                    <span class="tech-tag">Tableau</span> <span class="tech-tag">Data Blending</span>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <footer>
-        <p>&copy; 2026 Zain Ul Abidin - Multan, Pakistan</p>
+        <p>&copy; 2026 Zain Ul Abidin | Multan, Pakistan [cite: 3]</p>
+        <div class="social-links">
+            <a href="#">GitHub</a> | <a href="#">LinkedIn</a> | <a href="#">Kaggle</a>
+        </div>
     </footer>
 </body>
 </html>
