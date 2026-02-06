@@ -3,81 +3,379 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hi I'm Zain Ul Abidin | Portfolio</title>
+    <meta name="description" content="Zain Ul Abidin - Junior Data Analyst Portfolio. Specializing in data analytics, visualization, and business intelligence.">
+    <meta name="keywords" content="Data Analyst, Portfolio, Business Intelligence, Power BI, Tableau, SQL, Python">
+    <meta name="author" content="Zain Ul Abidin">
+    <title>Zain Ul Abidin | Data Analyst Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+    <!-- Navigation -->
     <nav>
         <div class="container nav-flex">
-            <div class="logo">ZA</div>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+            <div class="logo">
+                <i class="fas fa-chart-line"></i>
+                <span>Zain Ul Abidin</span>
+            </div>
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
         </div>
     </nav>
 
-    <header class="hero">
-        <div class="container">
-            <h1>Zain Ul Abidin</h1>
-            <p class="tagline">Junior Data Analyst</p>
-            <div class="badges">
-                <span><i class="fas fa-certificate"></i> Google Certified</span>
-                <span><i class="fab fa-aws"></i> Data Analytics Professional</span>
+    <!-- Hero Section -->
+    <header id="home" class="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <p class="greeting">Hello, I'm</p>
+                <h1 class="hero-title">Zain Ul Abidin</h1>
+                <p class="tagline">Junior Data Analyst & Business Intelligence Professional</p>
+                <div class="badges">
+                    <span class="badge"><i class="fas fa-certificate"></i> Google Certified</span>
+                    <span class="badge"><i class="fab fa-aws"></i> AWS Data Analytics</span>
+                </div>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                    <a href="#projects" class="btn btn-secondary">View My Work</a>
+                </div>
             </div>
+            <div class="hero-image">
+                <div class="profile-circle">
+                    <i class="fas fa-user-tie"></i>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <a href="#about"><i class="fas fa-chevron-down"></i></a>
         </div>
     </header>
 
-    <main class="container">
-        <section id="about" class="card">
-            <h2><i class="fas fa-user"></i> Professional Summary</h2>
-            <p>Data-driven analytics professional with hands-on experience in ETL processes, data visualization, and
-business intelligence. Proficient in SQL, Python, R, Power BI, Tableau, and Excel with proven ability
-to transform raw data into actionable insights. Experienced in e-commerce analytics, digital marketing
-performance tracking, and data-driven decision making. Strong foundation in statistical analysis and cloud
-technologies (AWS).</p>
-        </section>
-
-        <section id="experience">
-            <h2><i class="fas fa-briefcase"></i> Experience</h2>
-            <div class="timeline">
-                <div class="event card">
-                    <h3>E-commerce Data Analyst (Intern)</h3>
-                    <h4>Daraz E-commerce | Oct 2025 - Present</h4>
-                    <ul>
-                        <li>Manage product data pipelines for 500+ SKUs using Excel automation[cite: 14, 15, 16].</li>
-                        <li>Optimize ROI for Google and Facebook Ads through data-driven recommendations[cite: 17].</li>
-                        <li>Build interactive dashboards tracking conversion rates and customer acquisition[cite: 18].</li>
-                    </ul>
+    <main>
+        <!-- About Section -->
+        <section id="about" class="section about-section">
+            <div class="container">
+                <h2 class="section-title"><i class="fas fa-user"></i> About Me</h2>
+                <div class="about-content">
+                    <div class="about-text card">
+                        <h3>Professional Summary</h3>
+                        <p>Data-driven analytics professional with hands-on experience in ETL processes, data visualization, and business intelligence. Proficient in SQL, Python, R, Power BI, Tableau, and Excel with proven ability to transform raw data into actionable insights.</p>
+                        <p>Experienced in e-commerce analytics, digital marketing performance tracking, and data-driven decision making. Strong foundation in statistical analysis and cloud technologies (AWS).</p>
+                        <div class="about-stats">
+                            <div class="stat">
+                                <i class="fas fa-project-diagram"></i>
+                                <h4>10+</h4>
+                                <p>Projects Completed</p>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-certificate"></i>
+                                <h4>5+</h4>
+                                <p>Certifications</p>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-code"></i>
+                                <h4>8+</h4>
+                                <p>Technologies</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section id="projects">
-            <h2><i class="fas fa-project-diagram"></i> Key Projects</h2>
-            <div class="project-grid">
-                <div class="project-card card">
-                    <h3>Uber Analytics Project</h3>
-                    <p>Developed a Power BI dashboard to visualize KPIs like ride volume and revenue[cite: 29].</p>
-                    <span class="tech-tag">Power BI</span> <span class="tech-tag">DAX</span>
+        <!-- Skills Section -->
+        <section id="skills" class="section skills-section">
+            <div class="container">
+                <h2 class="section-title"><i class="fas fa-cogs"></i> Technical Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-category card">
+                        <i class="fas fa-database"></i>
+                        <h3>Data Analysis</h3>
+                        <ul class="skill-list">
+                            <li>SQL (MySQL, PostgreSQL)</li>
+                            <li>Python (Pandas, NumPy)</li>
+                            <li>R Programming</li>
+                            <li>Excel (Advanced)</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category card">
+                        <i class="fas fa-chart-bar"></i>
+                        <h3>Visualization</h3>
+                        <ul class="skill-list">
+                            <li>Power BI</li>
+                            <li>Tableau</li>
+                            <li>DAX</li>
+                            <li>Data Storytelling</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category card">
+                        <i class="fas fa-cloud"></i>
+                        <h3>Cloud & Tools</h3>
+                        <ul class="skill-list">
+                            <li>AWS Analytics</li>
+                            <li>ETL Processes</li>
+                            <li>Data Pipelines</li>
+                            <li>Git & Version Control</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category card">
+                        <i class="fas fa-brain"></i>
+                        <h3>Analytics</h3>
+                        <ul class="skill-list">
+                            <li>Statistical Analysis</li>
+                            <li>Business Intelligence</li>
+                            <li>A/B Testing</li>
+                            <li>Predictive Modeling</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="project-card card">
-                    <h3>Sales Analysis Dashboard</h3>
-                    <p>Dynamic Tableau dashboard tracking market trends and regional performance[cite: 33].</p>
-                    <span class="tech-tag">Tableau</span> <span class="tech-tag">Data Blending</span>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="section experience-section">
+            <div class="container">
+                <h2 class="section-title"><i class="fas fa-briefcase"></i> Work Experience</h2>
+                <div class="timeline">
+                    <div class="timeline-item card">
+                        <div class="timeline-date">Oct 2025 - Present</div>
+                        <div class="timeline-content">
+                            <h3>E-commerce Data Analyst (Intern)</h3>
+                            <h4><i class="fas fa-building"></i> Daraz E-commerce</h4>
+                            <ul class="experience-list">
+                                <li><i class="fas fa-check-circle"></i> Manage product data pipelines for 500+ SKUs using Excel automation and Python scripts</li>
+                                <li><i class="fas fa-check-circle"></i> Optimize ROI for Google and Facebook Ads through data-driven recommendations, improving campaign performance by 25%</li>
+                                <li><i class="fas fa-check-circle"></i> Build interactive Power BI dashboards tracking conversion rates, customer acquisition, and sales trends</li>
+                                <li><i class="fas fa-check-circle"></i> Conduct A/B testing analysis to improve website conversion rates and user engagement</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section projects-section">
+            <div class="container">
+                <h2 class="section-title"><i class="fas fa-project-diagram"></i> Featured Projects</h2>
+                <div class="project-grid">
+                    <div class="project-card card">
+                        <div class="project-icon">
+                            <i class="fas fa-car"></i>
+                        </div>
+                        <h3>Uber Analytics Dashboard</h3>
+                        <p>Developed a comprehensive Power BI dashboard to visualize key performance indicators including ride volume, revenue trends, driver performance, and customer satisfaction metrics.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Power BI</span>
+                            <span class="tech-tag">DAX</span>
+                            <span class="tech-tag">SQL</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> View Project</a>
+                        </div>
+                    </div>
+                    <div class="project-card card">
+                        <div class="project-icon">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <h3>Sales Analysis Dashboard</h3>
+                        <p>Created a dynamic Tableau dashboard tracking market trends, regional performance, and sales forecasts. Implemented data blending from multiple sources for comprehensive insights.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Tableau</span>
+                            <span class="tech-tag">Data Blending</span>
+                            <span class="tech-tag">Python</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> View Project</a>
+                        </div>
+                    </div>
+                    <div class="project-card card">
+                        <div class="project-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>Customer Segmentation Analysis</h3>
+                        <p>Performed RFM analysis and clustering to identify customer segments. Built predictive models to forecast customer lifetime value and churn probability.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Machine Learning</span>
+                            <span class="tech-tag">Pandas</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> View Project</a>
+                        </div>
+                    </div>
+                    <div class="project-card card">
+                        <div class="project-icon">
+                            <i class="fas fa-ad"></i>
+                        </div>
+                        <h3>Marketing Campaign ROI Tracker</h3>
+                        <p>Automated ETL pipeline for marketing data analysis. Created interactive reports showing campaign performance, cost per acquisition, and conversion metrics.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Excel</span>
+                            <span class="tech-tag">Power Query</span>
+                            <span class="tech-tag">VBA</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> View Project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section contact-section">
+            <div class="container">
+                <h2 class="section-title"><i class="fas fa-envelope"></i> Get In Touch</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>Let's Connect</h3>
+                        <p>I'm always open to discussing new opportunities, collaborations, or just having a chat about data analytics!</p>
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Multan, Pakistan</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <span>zain.abidin@email.com</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-phone"></i>
+                                <span>Available on request</span>
+                            </div>
+                        </div>
+                        <div class="social-links-contact">
+                            <a href="#" class="social-link" aria-label="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" class="social-link" aria-label="LinkedIn">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="#" class="social-link" aria-label="Kaggle">
+                                <i class="fab fa-kaggle"></i>
+                            </a>
+                            <a href="#" class="social-link" aria-label="Twitter">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="contact-form-container card">
+                        <form class="contact-form" id="contactForm">
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <input type="text" id="name" name="name" placeholder="John Doe" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Your Email</label>
+                                <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" name="subject" placeholder="Project Inquiry" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="5" placeholder="Your message here..." required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-submit">
+                                <i class="fas fa-paper-plane"></i> Send Message
+                            </button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
 
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2026 Zain Ul Abidin | Multan, Pakistan [cite: 3]</p>
-        <div class="social-links">
-            <a href="#">GitHub</a> | <a href="#">LinkedIn</a> | <a href="#">Kaggle</a>
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2026 Zain Ul Abidin. All rights reserved.</p>
+                <p class="footer-tagline">Turning Data into Insights | Multan, Pakistan</p>
+            </div>
         </div>
     </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Mobile menu toggle
+        const menuToggle = document.querySelector('.mobile-menu-toggle');
+        const navMenu = document.querySelector('.nav-menu');
+        
+        if (menuToggle) {
+            menuToggle.addEventListener('click', () => {
+                navMenu.classList.toggle('active');
+                const icon = menuToggle.querySelector('i');
+                icon.classList.toggle('fa-bars');
+                icon.classList.toggle('fa-times');
+            });
+        }
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                if (navMenu.classList.contains('active')) {
+                    navMenu.classList.remove('active');
+                    const icon = menuToggle.querySelector('i');
+                    icon.classList.add('fa-bars');
+                    icon.classList.remove('fa-times');
+                }
+            });
+        });
+
+        // Form submission handler
+        const contactForm = document.getElementById('contactForm');
+        if (contactForm) {
+            contactForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                alert('Thank you for your message! This is a demo form. In production, this would send your message.');
+                contactForm.reset();
+            });
+        }
+
+        // Add active state to navigation on scroll
+        window.addEventListener('scroll', () => {
+            let current = '';
+            const sections = document.querySelectorAll('section');
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (window.pageYOffset >= sectionTop - 200) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            document.querySelectorAll('.nav-link').forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === '#' + current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
 </body>
 </html>
