@@ -1248,6 +1248,33 @@ footer {
 }
 
 /* ============================================
+   Accessibility - Reduced Motion
+   ============================================ */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+    
+    .profile-circle {
+        animation: none !important;
+    }
+    
+    .hero-title,
+    .greeting,
+    .tagline,
+    .badges,
+    .hero-buttons {
+        animation: none !important;
+        opacity: 1 !important;
+    }
+}
+
+/* ============================================
    Responsive Design
    ============================================ */
 @media (max-width: 968px) {
