@@ -22,6 +22,16 @@
     --success: #2ecc71;
     --warning: #f39c12;
     
+    /* Additional Colors for Multi-color Theme */
+    --purple: #9b59b6;
+    --teal: #1abc9c;
+    --orange: #e67e22;
+    --pink: #e91e63;
+    --yellow: #f1c40f;
+    --indigo: #6c5ce7;
+    --cyan: #00d4ff;
+    --lime: #7bed9f;
+    
     /* Spacing */
     --spacing-xs: 0.5rem;
     --spacing-sm: 1rem;
@@ -263,11 +273,31 @@ nav {
     transition: all var(--transition-base);
 }
 
+.badge:nth-child(1) {
+    border-color: var(--teal);
+    color: var(--teal);
+    background: rgba(26, 188, 156, 0.1);
+}
+
+.badge:nth-child(2) {
+    border-color: var(--orange);
+    color: var(--orange);
+    background: rgba(230, 126, 34, 0.1);
+}
+
 .badge:hover {
     background: var(--primary);
     color: var(--text-white);
     transform: translateY(-2px);
     box-shadow: var(--shadow-glow);
+}
+
+.badge:nth-child(1):hover {
+    background: var(--teal);
+}
+
+.badge:nth-child(2):hover {
+    background: var(--orange);
 }
 
 .hero-buttons {
@@ -287,7 +317,7 @@ nav {
     width: 250px;
     height: 250px;
     border-radius: 50%;
-    background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+    background: linear-gradient(135deg, var(--purple) 0%, var(--pink) 50%, var(--orange) 100%);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -433,6 +463,18 @@ nav {
     margin-bottom: 0.5rem;
 }
 
+.stat:nth-child(1) i {
+    color: var(--teal);
+}
+
+.stat:nth-child(2) i {
+    color: var(--orange);
+}
+
+.stat:nth-child(3) i {
+    color: var(--purple);
+}
+
 .stat h4 {
     font-size: 2rem;
     color: var(--text-white);
@@ -461,6 +503,22 @@ nav {
     font-size: 3rem;
     color: var(--primary);
     margin-bottom: var(--spacing-sm);
+}
+
+.skill-category:nth-child(1) i {
+    color: var(--cyan);
+}
+
+.skill-category:nth-child(2) i {
+    color: var(--pink);
+}
+
+.skill-category:nth-child(3) i {
+    color: var(--yellow);
+}
+
+.skill-category:nth-child(4) i {
+    color: var(--indigo);
 }
 
 .skill-category h3 {
@@ -506,6 +564,18 @@ nav {
     border-left: 3px solid var(--primary);
 }
 
+.timeline-item:nth-child(1) {
+    border-left-color: var(--teal);
+}
+
+.timeline-item:nth-child(2) {
+    border-left-color: var(--purple);
+}
+
+.timeline-item:nth-child(3) {
+    border-left-color: var(--orange);
+}
+
 .timeline-item::before {
     content: '';
     position: absolute;
@@ -516,6 +586,18 @@ nav {
     border-radius: 50%;
     background: var(--primary);
     box-shadow: 0 0 0 4px var(--card-bg);
+}
+
+.timeline-item:nth-child(1)::before {
+    background: var(--teal);
+}
+
+.timeline-item:nth-child(2)::before {
+    background: var(--purple);
+}
+
+.timeline-item:nth-child(3)::before {
+    background: var(--orange);
 }
 
 .timeline-date {
@@ -578,6 +660,30 @@ nav {
     font-size: 3rem;
     color: var(--primary);
     margin-bottom: var(--spacing-sm);
+}
+
+.project-card:nth-child(1) .project-icon {
+    color: var(--purple);
+}
+
+.project-card:nth-child(2) .project-icon {
+    color: var(--teal);
+}
+
+.project-card:nth-child(3) .project-icon {
+    color: var(--orange);
+}
+
+.project-card:nth-child(4) .project-icon {
+    color: var(--pink);
+}
+
+.project-card:nth-child(5) .project-icon {
+    color: var(--cyan);
+}
+
+.project-card:nth-child(6) .project-icon {
+    color: var(--indigo);
 }
 
 .project-card h3 {
