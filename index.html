@@ -393,14 +393,18 @@
             rootMargin: '0px 0px -50px 0px'
         };
 
+        let animationCounter = 0;
+
         const observer = new IntersectionObserver((entries) => {
-            entries.forEach((entry, index) => {
+            entries.forEach((entry) => {
                 if (entry.isIntersecting) {
                     // Add staggered animation delay
+                    const delay = animationCounter * 100;
                     setTimeout(() => {
                         entry.target.style.opacity = '1';
                         entry.target.style.transform = 'translateY(0)';
-                    }, index * 100);
+                    }, delay);
+                    animationCounter++;
                     observer.unobserve(entry.target);
                 }
             });
@@ -456,7 +460,12 @@
             // Counter animation for stats
             const stats = document.querySelectorAll('.stat h4');
             stats.forEach(stat => {
-                const target = parseInt(stat.textContent);
+                const text = stat.textContent;
+                const numericValue = text.replace(/\D/g, '');
+                const target = parseInt(numericValue);
+                
+                if (isNaN(target) || target === 0) return;
+                
                 let current = 0;
                 const increment = target / 50;
                 const timer = setInterval(() => {

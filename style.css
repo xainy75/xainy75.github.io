@@ -342,7 +342,6 @@ nav {
     -webkit-text-fill-color: transparent;
     background-clip: text;
     animation: fadeInUp 1s ease 0.5s both, textGlow 3s ease-in-out infinite;
-    text-shadow: 0 0 30px rgba(255, 255, 255, 0.5);
 }
 
 @keyframes textGlow {
