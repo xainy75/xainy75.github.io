@@ -246,7 +246,7 @@
                             </div>
                             <div class="contact-item">
                                 <i class="fas fa-envelope"></i>
-                                <span>zain.abidin@email.com</span>
+                                <span>xainyblblack@gmail.com</span>
                             </div>
                             <div class="contact-item">
                                 <i class="fas fa-phone"></i>
@@ -269,7 +269,12 @@
                         </div>
                     </div>
                     <div class="contact-form-container card">
-                        <form class="contact-form" id="contactForm">
+                        <form class="contact-form" id="contactForm" action="https://formsubmit.co/xainyblblack@gmail.com" method="POST">
+                            <!-- FormSubmit Configuration -->
+                            <input type="hidden" name="_subject" value="New contact form submission from portfolio!">
+                            <input type="hidden" name="_captcha" value="false">
+                            <input type="hidden" name="_template" value="table">
+                            
                             <div class="form-group">
                                 <label for="name">Your Name</label>
                                 <input type="text" id="name" name="name" placeholder="John Doe" required>
@@ -350,9 +355,14 @@
         const contactForm = document.getElementById('contactForm');
         if (contactForm) {
             contactForm.addEventListener('submit', function(e) {
-                e.preventDefault();
-                alert('Thank you for your message! This is a demo form. In production, this would send your message.');
-                contactForm.reset();
+                // Let the form submit naturally to FormSubmit
+                // Show a user-friendly message
+                const button = contactForm.querySelector('.btn-submit');
+                button.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+                button.disabled = true;
+                
+                // Note: The form will redirect to FormSubmit's thank you page
+                // You can customize this with a redirect parameter if needed
             });
         }
 
