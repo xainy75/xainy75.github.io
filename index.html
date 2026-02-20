@@ -3,10 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Zain Ul Abidin - Junior Data Analyst Portfolio. Specializing in data analytics, visualization, and business intelligence.">
+    <meta name="description" content="Mr. Zain Ul Abidin - Junior Data Analyst Portfolio. Specializing in data analytics, visualization, and business intelligence.">
     <meta name="keywords" content="Data Analyst, Portfolio, Business Intelligence, Power BI, Tableau, SQL, Python">
     <meta name="author" content="Zain Ul Abidin">
-    <title>Zain Ul Abidin | Data Analyst Portfolio</title>
+    <title>Mr. Zain Ul Abidin | Data Analyst Portfolio</title>
+    <!-- Open Graph / Social Media Preview -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Mr. Zain Ul Abidin | Data Analyst Portfolio">
+    <meta property="og:description" content="Junior Data Analyst & Business Intelligence Professional. Specializing in SQL, Python, Power BI, Tableau, and cloud analytics.">
+    <meta property="og:url" content="https://xainy75.github.io">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Mr. Zain Ul Abidin | Data Analyst Portfolio">
+    <meta name="twitter:description" content="Junior Data Analyst & Business Intelligence Professional. Specializing in SQL, Python, Power BI, Tableau, and cloud analytics.">
+    <meta name="theme-color" content="#000000">
     <!-- Resource hints for performance -->
     <link rel="preconnect" href="https://cdnjs.cloudflare.com">
     <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
@@ -40,7 +49,7 @@
         <div class="container hero-content">
             <div class="hero-text">
                 <p class="greeting">Hello, I'm</p>
-                <h1 class="hero-title">Zain Ul Abidin</h1>
+                <h1 class="hero-title"><span class="name-prefix">Mr.</span> <span class="name-text">Zain Ul Abidin</span></h1>
                 <p class="tagline">Junior Data Analyst & Business Intelligence Professional</p>
                 <div class="badges">
                     <span class="badge"><i class="fas fa-certificate"></i> Google Certified</span>
@@ -497,20 +506,22 @@
 
             // Optimized typing effect using requestAnimationFrame
             const heroTitle = document.querySelector('.hero-title');
-            if (heroTitle) {
-                const text = heroTitle.textContent;
-                heroTitle.textContent = '';
-                heroTitle.style.opacity = '1';
+            const nameTextEl = heroTitle ? heroTitle.querySelector('.name-text') : null;
+            const typeTarget = nameTextEl || heroTitle;
+            if (typeTarget) {
+                const text = typeTarget.textContent;
+                typeTarget.textContent = '';
+                if (heroTitle) heroTitle.style.opacity = '1';
                 let i = 0;
                 let lastTime = 0;
                 const typingSpeed = 100; // milliseconds per character
                 
                 const typeWriter = (currentTime) => {
-                    if (i === 0) lastTime = currentTime;
+                    if (lastTime === 0) lastTime = currentTime;
                     
                     if (currentTime - lastTime >= typingSpeed) {
                         if (i < text.length) {
-                            heroTitle.textContent += text.charAt(i);
+                            typeTarget.textContent += text.charAt(i);
                             i++;
                             lastTime = currentTime;
                         } else {
